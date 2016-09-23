@@ -3,7 +3,7 @@ import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from '../index';
 
 storiesOf('Button', module)
-  .add('default view', () => (
+  .addWithInfo('default view', 'Description', () => (
     <Button onClick={ action('button clicked') }>Hello</Button>
   ))
   .add('link button', () => (
